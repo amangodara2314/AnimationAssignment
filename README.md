@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+Animation Assignment
+Welcome to the Animation Assignment repository! This project showcases various animations implemented using React and CSS. It's a part of an assignment designed to demonstrate the ability to create smooth, performant animations without relying on external libraries.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview
+This project includes three different types of animations:
 
-## Available Scripts
+Fade-In Animation
+Slide-In List Animation
+Rotate Button Animation
 
-In the project directory, you can run:
+Animations Implemented
+1. Fade-In Animation
+The Fade-In Animation component smoothly fades in a text and image when the component is rendered. This is a simple yet effective way to make content appear more dynamically on the screen.
 
-### `npm start`
+2. Slide-In List Animation
+The Slide-In List Animation component makes a list of items slide in from the left when the component is loaded. Each item slides in with a slight delay, creating a staggered effect that draws attention to each item as it appears.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Rotate Button Animation
+The Rotate Button Animation component features a button that rotates 360 degrees clockwise when clicked. The button stays in its rotated position after the animation completes, demonstrating a state change in response to user interaction.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technologies Used
+React: A JavaScript library for building user interfaces.
+CSS: For styling components and creating animations.
 
-### `npm test`
+Getting Started
+To get a local copy up and running, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Prerequisites
+Make sure you have Node.js and npm installed on your machine. If not, you can download and install them from Node.js.
 
-### `npm run build`
+Installation
+Clone the repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/amangodara2314/AnimationAssignment.git
+Navigate to the project directory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd AnimationAssignment
+Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
+Start the development server
 
-### `npm run eject`
+npm start
+Open your browser
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Go to http://localhost:3000 to see the animations in action.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Usage
+Fade-In Component
+The FadeInComponent demonstrates a fade-in effect for both text and an image. To see the animation, simply ensure the component is rendered on the screen.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Slide-In List Component
+The SlideInList demonstrates a list of items sliding in from the left. Each item has a slight delay before it appears, creating a sequential slide-in effect.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Rotate Button Component
+The RotateButton demonstrates a button that rotates 360 degrees when clicked. The button stays in its rotated state after the animation finishes.
 
-## Learn More
+Code Structure
+Here's an overview of the project structure:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+AnimationAssignment/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── FadeInComponent.js
+│   │   ├── SlideInList.js
+│   │   ├── RotateButton.js
+│   │   ├── FadeInComponent.css
+│   │   ├── SlideInList.css
+│   │   ├── RotateButton.css
+│   ├── App.js
+│   ├── index.js
+├── package.json
+└── README.md
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Detailed Component Descriptions
 
-### Code Splitting
+FadeInComponent.js
+This component displays an image and some text that fade in smoothly. The CSS handles the animation, which transitions the opacity from 0 to 1.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+SlideInList.js
+This component displays a list of items that slide in from the left. The CSS animation transitions the transform property, sliding each item into view.
 
-### Analyzing the Bundle Size
+RotateButton.js
+This component contains a button that rotates 360 degrees on click. The rotation is handled via a CSS animation triggered by updating the component state in React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
